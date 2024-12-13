@@ -1,0 +1,144 @@
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+/* Full-page layout */
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradient background */
+}
+
+/* Shared styling for both boxes */
+.login-left,
+.login-container {
+    flex: 1;
+    max-width: 400px; /* Same width for both boxes */
+    height: 400px; /* Same height for both boxes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Center content vertically */
+    border-radius: 12px; /* Rounded corners */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Left box (Blue with logo) */
+.login-left {
+    background-color: #1e3a8a; /* Darker blue */
+    text-align: center;
+    padding: 30px;
+}
+
+.login-left img {
+    max-width: 75%; /* Scale image inside the box */
+    height: auto;
+}
+
+.login-left h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+/* Right box (Login form) */
+.login-container {
+    background: white;
+    color: #444;
+    padding: 30px 20px;
+    text-align: left;
+}
+
+.login-container h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #6a11cb;
+}
+
+/* Form styling */
+.login-form {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center align content */
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-with-icon {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Input fields */
+input {
+    width: 100%;
+    padding: 12px 12px 12px 45px; /* Add space for custom icons */
+    font-size: 14px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s ease-in-out;
+}
+
+input::placeholder {
+    text-align: left; /* Align the placeholder text to the left */
+    color: #aaa; /* Placeholder text color */
+}
+
+input:focus {
+    border-color: #6a11cb;
+}
+
+/* Custom icons */
+.input-with-icon img {
+    position: absolute;
+    left: 12px; /* Position the custom icons */
+    width: 20px; /* Icon width */
+    height: 20px; /* Icon height */
+}
+
+/* Button styling */
+.login-button {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 12px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    width: 100%;
+}
+
+.login-button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+}
+
+/* Extras (Remember me and Forgot password) */
+.extras {
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+    width: 100%;
+    font-size: 12px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .login-page {
+        flex-direction: column;
+    }
+
+    .login-left,
+    .login-container {
+        max-width: 90%;
+        height: auto; /* Adjust height for smaller screens */
+        margin: 10px 0; /* Add spacing between the boxes */
+    }
+}

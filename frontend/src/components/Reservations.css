@@ -1,0 +1,42 @@
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+.reservations-content {
+    margin-left: 250px; /* Sidebar width */
+    padding: 20px;
+    width: 1000px;
+    min-height: 100vh; /* Ensures full height for content */
+    box-sizing: border-box;
+}
+
+.reservations-content h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Table styles */
+.reservations-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.reservations-table th,
+.reservations-table td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.reservations-table th {
+    background-color: #34495e;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.reservations-table tr:hover {
+    background-color: #f2f2f2;
+}

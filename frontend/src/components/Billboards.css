@@ -1,0 +1,42 @@
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+.billboards-content {
+    margin-left: 250px; /* Sidebar width */
+    padding: 20px;
+    width: 1000px;
+    min-height: 100vh; /* Ensures full height for content */
+    box-sizing: border-box;
+}
+
+.billboards-content h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+/* Table styles */
+.billboards-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.billboards-table th,
+.billboards-table td {
+    text-align: left;
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+}
+
+.billboards-table th {
+    background-color: #34495e;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.billboards-table tr:hover {
+    background-color: #f2f2f2;
+}
